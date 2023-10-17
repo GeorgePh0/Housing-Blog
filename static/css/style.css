@@ -1,0 +1,43 @@
+body {
+    background-color: #F9FAFC;
+}
+
+.logo {
+    text-decoration: none;
+}
+
+.light-bg {
+    background-color: #95bdff;
+}
+
+.dark-bg {
+    background-color: #2c2c2c;
+}
+
+.main-bg {
+    background-color: #fafafa;
+}
+
+.card {
+    border: none;
+    background-color: transparent;
+    max-width: 80%;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-flash {
+    position: absolute;
+    bottom: 5%;
+    min-width: 30%;
+    left: -2px;
+    background-color: #3099ac;
+}
+
+.author {
+    color: white;
+    margin: 5px;
+    text-transform: uppercase;
+}
