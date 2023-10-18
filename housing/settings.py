@@ -102,8 +102,8 @@ TEMPLATES = [
 SOCIALACCOUNT_PROVIDERS = {
     'github': {
         'APP': {
-            'client_id': '123',
-            'secret': '456',
+            'client_id': '6426d45cf83e9c5eb833',
+            'secret': '85a42bdb53c6948abb2ed9fdeb22fcf2af49acbc',
             'key': ''
         }
     },
