@@ -1,9 +1,21 @@
 body {
-    background-color: #F9FAFC;
+    background-color: #f3f3f3;
 }
 
 .logo {
     text-decoration: none;
+    color: #e7e5e5;
+}
+
+.logo:hover {
+    color: #e7e5e5;
+}
+
+.navbar {
+    font-family: Lato, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #e7e5e5;
 }
 
 .light-bg {
@@ -15,7 +27,7 @@ body {
 }
 
 .main-bg {
-    background-color: #fafafa;
+    background-color: #e7e5e5;
 }
 
 .card {
