@@ -45,7 +45,7 @@ body {
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #3099ac;
+    background-color: #3e83f1;
 }
 
 .author {
@@ -72,4 +72,35 @@ body {
 .masthead-image {
     position: relative;
     overflow: hidden;
+}
+
+.post-link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.post-link:hover,
+.page-link {
+    color: #3e83f1;
+}
+
+.post-title {
+    margin-top: 20%;
+    margin-left: 10%;
+}
+
+.post-subtitle {
+    margin-left: 10%;
+    color: rgb(229, 230, 231);
+}
+
+.btn-signup {
+    background-color: #37b627;
+    color: black;
+}
+
+.btn-signup:hover,
+.btn-signup:active {
+    background-color: #29751f;
+    color: black;
 }
