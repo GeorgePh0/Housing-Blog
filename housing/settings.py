@@ -45,11 +45,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'allauth.socialaccount.providers.github',
     'allauth.socialaccount.providers.facebook',
-    'allauth.socialaccount.providers.google',
-    'allauth.socialaccount.providers.instagram',
-    'allauth.socialaccount.providers.twitter',
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
@@ -100,35 +96,7 @@ TEMPLATES = [
 ]
 
 SOCIALACCOUNT_PROVIDERS = {
-    'github': {
-        'APP': {
-            'client_id': '6426d45cf83e9c5eb833',
-            'secret': '85a42bdb53c6948abb2ed9fdeb22fcf2af49acbc',
-            'key': ''
-        }
-    },
     'facebook': {
-        'APP': {
-            'client_id': '123',
-            'secret': '456',
-            'key': ''
-        }
-    },
-    'google': {
-        'APP': {
-            'client_id': '123',
-            'secret': '456',
-            'key': ''
-        }
-    },
-    'instagram': {
-        'APP': {
-            'client_id': '123',
-            'secret': '456',
-            'key': ''
-        }
-    },
-    'twitter': {
         'APP': {
             'client_id': '123',
             'secret': '456',
