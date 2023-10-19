@@ -118,3 +118,16 @@ body {
 .comment-section {
     margin-top: 1.3em;
 }
+
+.btn-like {
+    color: #ff0000;
+    border: none;
+    background: transparent;
+}
+
+.btn-like:hover,
+.btn-like:active {
+    color: #ff0000;
+    background: transparent;
+    border: none;
+}
