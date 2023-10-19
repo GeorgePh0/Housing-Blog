@@ -104,3 +104,13 @@ body {
     background-color: #29751f;
     color: black;
 }
+
+.link {
+    text-decoration: none;
+}
+
+.link:hover,
+.link:active {
+    color: #29751f;
+    text-decoration: underline;
+}
