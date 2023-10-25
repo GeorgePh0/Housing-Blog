@@ -4,5 +4,29 @@
 
 {% block content %}
 
+<div class="masthead profile-center">
+    <div class="container">
+        <form method="POST" enctype="multipart/form-data" class="card">
+            {% csrf_token %} 
+            
+            {% if user.profile %}
+                <img src="{{user.profile.avatar}}" alt="{{ user.username }}" class="avatar"  accept=".jpg,.jpeg,.png"/>
+            {% endif %}
+            
+            <h2 class="text-center">{{ user.username }}</h2>
+            <p class="text-center">{{ user.profile.bio }}</p>
+            <hr>
+            
+            <label for="bio">Bio:</label>
+            <input type="text" id="text" name="bio" value="{{user.profile.bio}}">
 
-{%endblock%}
+            <label for="avatar">Avatar:</label>
+            <input type="file" name="avatar" id="avatar">	
+            
+            <button type="submit" class="btn btn-primary btn-style">Update Profile</button>
+        
+        </form>
+    </div>
+</div>
+
+{% endblock content %}

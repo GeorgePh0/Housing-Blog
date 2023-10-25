@@ -131,3 +131,33 @@ body {
     background: transparent;
     border: none;
 }
+
+.profile-center {
+    margin-top: 100px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.card {
+    border: solid 1px var(--color-light);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    box-shadow: rgb(11 43 158 / 15%) 0px 6px 20px -6px;
+    min-width: 400px;
+  }
+
+.avatar {
+    display:block;
+	margin:0 auto;
+	max-width:150px;
+}
+
+.text-center {
+    text-align: center;
+  }
+
+.btn-style {
+    margin-top: 20px;
+}
