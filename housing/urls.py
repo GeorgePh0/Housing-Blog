@@ -17,6 +17,8 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from blog.views import handler404, handler500, handler403, handler405
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,3 +26,9 @@ urlpatterns = [
     path('', include('blog.urls'), name='blog_urls'),
     path('accounts/', include('allauth.urls')),
 ]
+
+
+handler404 = 'blog.views.handler404'
+handler500 = 'blog.views.handler500'
+handler403 = 'blog.views.handler403'
+handler405 = 'blog.views.handler405'
