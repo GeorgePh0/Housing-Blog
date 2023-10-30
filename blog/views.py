@@ -3,8 +3,8 @@ from django.views import generic, View
 from django.http import HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
-from .models import Post
-from .forms import CommentForm
+from .models import Post, Profile
+from .forms import CommentForm, ProfileForm
 
 
 class PostList(generic.ListView):
@@ -80,8 +80,19 @@ class PostLike(LoginRequiredMixin, View):
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
+class ProfileView(LoginRequiredMixin, View):
+    def get(self, request, *args, **kwargs):
+        profile, created = Profile.objects.get_or_create(
+            user=self.request.user)
+        return render(
+            request, 'profile.html',
+            {
+                "profile_form": ProfileForm(instance=profile)
+            }
+        )
+
 @login_required
-def Profile(request):
+def profile(request):
     return render(request, 'profile.html')
 
 
