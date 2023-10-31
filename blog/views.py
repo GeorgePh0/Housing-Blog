@@ -91,6 +91,7 @@ class ProfileView(LoginRequiredMixin, View):
             }
         )
 
+
 @login_required
 def profile(request):
     return render(request, 'profile.html')
